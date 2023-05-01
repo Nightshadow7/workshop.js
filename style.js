@@ -1,17 +1,6 @@
-//2. Dado un numero indicar si es par o impar y si es mayor que 10
+// 3. Contruir el algoritmo para determinar el voltaje de un circuito a partir de la resistencia y la intensidad de la corriente 
 
-let numero = parseFloat(prompt(`Digite un numero`));
-if (numero >= 10) {
-  if (numero % 2 === 0){
-    alert("es mayor que 10 y es par");
-  }
-  else {
-    alert("es mayor que 10 y es impar");
-  }
-} else{
-  if (numero % 2 === 0){
-    alert("es menor que 10 y es par");
-  } else{
-    alert("es menor que 10 y es impar");
-  }
-}
+let resistencia = parseFloat(prompt(`Digite la resistencia`));
+let intensidad = parseFloat(prompt(`Digite la intensidad`));
+let voltaje = resistencia * intensidad;
+alert(`El voltaje es ${voltaje} voltios`);
