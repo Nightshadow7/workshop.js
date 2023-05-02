@@ -1,17 +1,16 @@
-// 4. Construir el algoritmo que solicite el nombre y edad de 3 personas y determine el nombre de la persona de mayor edad
+//5. Construir el algoritmo que lea por teclado dos números, si el primero es mayor al segundo informar su suma y diferencia, en caso contrario, informar el producto y la división del primero respecto al segundo.
 
-let nombre1 = prompt(`Digite su nombre`);
-let edad1 = prompt(`Hola ${nombre1} digite su edad`);
-let nombre2 = prompt(`Digite su nombre`);
-let edad2 = prompt(`Hola ${nombre2} Digite su edad`);
-let nombre3 = prompt(`Digite su nombre`);
-let edad3 = prompt(`Hola ${nombre3} Digite su edad`);
-if (edad1 > edad2 && edad1 > edad3){
-  alert(`El nombre de la persona de mayor edad es ${nombre1}`);
-}
-else if (edad2 > edad1 && edad2 > edad3){
-  alert(`El nombre de la persona de mayor edad es ${nombre2}`);
-}
-else if (edad3 > edad1 && edad3 > edad2){
-  alert(`El nombre de la persona de mayor edad es ${nombre3}`);
+let numero1 =  parseFloat(prompt(`Digite el primer numero`));
+let numero2 = parseFloat(prompt(`Digite el segundo numero`));
+
+if (numero1 > numero2){
+  let suma = numero1 + numero2;
+  let diferencia = numero1 - numero2;
+  alert(`La suma de ${numero1} y ${numero2} es: ${suma}`);
+  alert(`La resta de ${numero1} menos ${numero2} es: ${diferencia}`);
+} else { 
+  let producto = numero1 * numero2;
+  let division = numero1 / numero2;
+  alert(`La producto de ${numero1} y ${numero2} da como resultado:  ${producto}`);
+  alert(`La division de ${numero1} entre ${numero2} es: ${division}`);
 }
